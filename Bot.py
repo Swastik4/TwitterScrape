@@ -1,7 +1,6 @@
 def CheckGit():
     from tweepy import OAuthHandler
     from tweepy import API
-    import os
     import config
     auth = OAuthHandler(os.environ['KK1'], os.environ['KK2'])
     auth.set_access_token(os.environ['KK3'], os.environ['KK4'])
@@ -23,6 +22,7 @@ def CheckGit():
 chat_id="@gitool4"
 import telepot
 import time
+import os
 bot = telepot.Bot(os.environ['KK5'])
 CheckGit()
 
